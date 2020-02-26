@@ -8,7 +8,7 @@ void GPIO::GenerateVariablePWM(int period,int first_pulse,int last_pulse, int nu
     for(int i = 0; i < num_periods; i++) {
         pulse = first_angle * i * ((last_pulse - first_pulse)/num_periods);
         cout<<"the pulse is: "<<pulse;
-        write(fd, "1", 1);
+        write(fd, "0", 1);
         usleep(period-pulse);
 
     }
