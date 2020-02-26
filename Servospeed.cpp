@@ -8,7 +8,7 @@ int main() {
     int servo; int list = 1; int f_angle; int s_angle; int first_a; int second_a;
     int pin_num;
     int pos;
-    while( list == 1) {
+ 
         cout<<"Servo 1: Base. ";
         cout<<"Servo 2: Bicep.  ";
         cout<<"Servo 3: Elbow.  ";
@@ -22,6 +22,8 @@ int main() {
         cin>>s_angle;
         cout<<"enter value for speed"<<endl;
         cin>>speed;
+        while(a==1) {
+        
         if((servo >= 0 && servo <= 5) && (f_angle>= 0 && f_angle <= 180 ) && (s_angle >= 0 && s_angle <= 180) && (speed > 0))
         {
 
@@ -52,7 +54,7 @@ int main() {
             second_a = (s_angle *10)+600;
             num_periods = (((s_angle - f_angle)/speed) * 50);
             gpio.GeneratePin(20000, first_a, second_a, num);
-            return 0; 
+            return 0;
 
 
         }
@@ -60,5 +62,6 @@ int main() {
 
 
 
-   
+
 }
+
