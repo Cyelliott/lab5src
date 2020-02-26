@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-    int servo; int list = 1; int f_angle; int s_angle; int first_a; int second_a;
+    int servo; int list = 1; int f_angle; int s_angle; int first_a; int second_a; int a = 1; 
     int pin_num;
     int pos;
  
