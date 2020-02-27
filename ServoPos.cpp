@@ -41,7 +41,7 @@ int main() {
 
             }
             GPIO gpio(pin_num);
-            gpio.GeneratePin(20000,(pos *10) + 600, 400 );
+            gpio.GeneratePWM(20000,(pos *10) + 600, 400 );
             return 0;
 
         }
